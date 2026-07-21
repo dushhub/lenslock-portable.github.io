@@ -23,7 +23,7 @@
             <!-- Home Section -->
             <section id="home" class="active-section">
                 <h1>Hi, I'm <span class="highlight">Dush</span></h1>
-                <p>Welcome to my personal space! I build practical, small-scale software and tools using AI. I created this website so you can easily explore and download my latest projects.</p>
+                <p>Welcome to my personal space! I build practical, small scale software and tools using AI. I created this website so you can easily explore and download my latest projects.</p>
                 <button class="glass-btn" onclick="showSection('software')">View My Software</button>
             </section>
 
@@ -48,12 +48,13 @@
             <section id="contact" class="hidden-section">
                 <h1>Contact <span class="highlight">Me</span></h1>
                 <p>If you need a custom tool built or want to report a bug, drop me a message below.</p>
-                <form class="glass-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="4" required></textarea>
-                    <button type="submit" class="glass-btn">Send Message</button>
-                </form>
+               <form action="https://formspree.io/f/mgogzkgg" method="POST" class="glass-form">
+    <!-- Meke 'name' kiyana attributes eka thama aluthen ekathu kale -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="glass-btn">Send Message</button>
+</form>
             </section>
         </main>
     </div>
