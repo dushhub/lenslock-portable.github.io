@@ -20,3 +20,8 @@ function showSection(sectionId) {
 
     document.getElementById('nav-' + sectionId).classList.add('active');
 }
+
+// Software eka download karana function eka
+function downloadSoftware() {
+    window.location.href = "https://drive.google.com/uc?export=download&id=1uXqanwPpgvBG5njnbQ20a7h1EgF40jZ5";
+}
