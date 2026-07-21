@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dush | Software Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Glassmorphism Main Container -->
+    <div class="glass-container">
+        <nav>
+            <h2 class="logo">Dush.<span>Github.io</span></h2>
+            <ul>
+                <li><a href="#" onclick="showSection('home')" class="active" id="nav-home">Home</a></li>
+                <li><a href="#" onclick="showSection('software')" id="nav-software">Software</a></li>
+                <li><a href="#" onclick="showSection('contact')" id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="active-section">
+                <h1>Hi, I'm <span class="highlight">Dush</span></h1>
+                <p>Welcome to my personal space! I build practical, small scale software and tools using AI. I created this website so you can easily explore and download my latest projects.</p>
+                <button class="glass-btn" onclick="showSection('software')">View My Software</button>
+            </section>
+
+            <!-- Software Section -->
+            <section id="software" class="hidden-section">
+                <h1>My <span class="highlight">Software</span></h1>
+                <div class="software-grid">
+                    
+                    <!-- Software Item 1 -->
+                    <div class="glass-card">
+                        <i class="fa-solid fa-lock fa-3x"></i>
+                        <h3>LensLock Portable</h3>
+                        <p>A simple tool that locks your webcam to protect against unauthorized access.</p>
+                        <!-- Methane 'download' attribute eka damma kelinma download wenna -->
+                        <a href="LensLock-Portable.zip" download class="glass-btn download-btn"><i class="fa-solid fa-download"></i> Download</a>
+                    </div>
+
+                    <!-- Software Item 2 (Danata hide karala thiyenne) -->
+                    <!--
+                    <div class="glass-card">
+                        <i class="fa-solid fa-robot fa-3x"></i>
+                        <h3>Auto Clicker Pro</h3>
+                        <p>An AI-assisted script designed to automate repetitive clicking tasks effortlessly.</p>
+                        <a href="autoclicker.zip" download class="glass-btn download-btn"><i class="fa-solid fa-download"></i> Download</a>
+                    </div>
+                    -->
+
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="hidden-section">
+                <h1>Contact <span class="highlight">Me</span></h1>
+                <p>If you need a custom tool built or want to report a bug, drop me a message below.</p>
+                <form class="glass-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="glass-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
