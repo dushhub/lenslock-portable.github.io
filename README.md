@@ -1,5 +1,4 @@
-# 🔒 LensLock Portable
-
+# 🔒 LensLock Portable - (Open-Source)
 ![License](https://img.shields.io/badge/license-Free-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
 
